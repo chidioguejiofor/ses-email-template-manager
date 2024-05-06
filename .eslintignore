@@ -1,0 +1,6 @@
+dist
+node_modules
+scripts
+templates
+__email_templates__
+src/infrastructure/db/migrations/*.js

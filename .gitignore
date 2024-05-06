@@ -1,0 +1,23 @@
+node_modules
+node_modules/
+.vscode
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
+.env
+build
+dist
+dump.rdb
+Archive.zip
+**/.DS_Store
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.envrc
+
+__email_templates__
