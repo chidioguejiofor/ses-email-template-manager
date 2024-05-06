@@ -8,7 +8,7 @@ The main problem with AWS SES is that it doesn't give you the ability to view an
 
 This project simplifies:
 
-- createing and updating new email template based on HTML
+- creating and updating new email template based on HTML
 - sending email templates using test variables to see how it looks
 - previewing html template(since you can use live-server in VScode)
 
@@ -27,7 +27,7 @@ Install deps with `npm install`
 
 ### Adding a new template
 
-#### Setmp 1: Create the Folder
+#### Step 1: Create the Folder
 
 To add a new template, create a new folder in the email-tempaltes folder. Each you create should have a structure that looks like this:
 
@@ -41,13 +41,13 @@ src/email-templates/example-foldder
 
 The `main.html` is the html that would be sent. The `main.txt` is how the email would look if the user distabled HTML while the `testVariables.json` is the sample testVariables that would be sent.
 
-#### Setmp 2: Add folder to the config file
+#### Step 2: Add folder to the config file
 
 In `src/settings.ts` you would see a config file that maps email-templates to folder names.
 
 The keys are the Email template name on AWS while the values are the folder that maps in this repo.
 
-#### Setmp 3: Run interactive CLI tool
+#### Step 3: Run interactive CLI tool
 
 When you run `npm run dev`, you would see 2 options:
 
